@@ -82,8 +82,12 @@ while (subject.count < 31) {
 ## Tidy Column Names (remove round brackets & commas and make more meaninful Subject and Activity Names)
 colnames(tidy.data.set) <- gsub("\\(|\\)", "", colnames(tidy.data.set))   ## remove round brackets
 colnames(tidy.data.set) <- gsub("\\,|\\)", "", colnames(tidy.data.set))   ## remove commas
+colnames(tidy.data.set) <- gsub("\\-|\\)", ".", colnames(tidy.data.set))  ## remove dash
 colnames(tidy.data.set) <- gsub("subject.count", "Subject", colnames(tidy.data.set))
 colnames(tidy.data.set) <- gsub("Group.1", "Activity", colnames(tidy.data.set))
+colnames(tidy.data.set) <- sub("^f", "freq.", colnames(tidy.data.set)) ## replace 1st "f" with "freq."
+colnames(tidy.data.set) <- sub("^t", "time.", colnames(tidy.data.set)) ## replace 1st "t" with "time."
+colnames(tidy.data.set) <- sub("BodyBody", "Body", colnames(tidy.data.set)) ## removes duplicate "Body"
 
 
 ## Write the tidy data set to a text file
