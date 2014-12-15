@@ -42,7 +42,7 @@ Data extracted from the following data source:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-### Key Data Files processed
+### Key Raw Data Files processed
 
 + **activity_labels.txt** - Activity Meta Data (6 rows & 2 columns)
 
@@ -50,15 +50,15 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 + **X_test.txt** - Test Data (2947 rows & 561 columns)
 
-+ **y_test.txt** - Test Data (2947 rows & 1 column)
++ **y_test.txt** - Test Data - Relates to Activity (2947 rows & 1 column)
 
-+ **subject_test.txt** - Test Data (2947 rows & 1 column)
++ **subject_test.txt** - Test Data  - Relates to Individual Subject (2947 rows & 1 column)
 
 + **X_train.txt** - Train Data (7352 rows & 561 columns)
 
-+ **y_train.txt** - Train Data (7352 rows & 1 column)   
++ **y_train.txt** - Train Data - Relates to Activity (7352 rows & 1 column)   
 
-+ **subject_train.txt** -Train Data (7352 rows & 1 column)
++ **subject_train.txt** -Train Data - Relates to Individual Subject (7352 rows & 1 column)
 
 
 ## Key Processing Steps

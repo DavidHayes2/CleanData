@@ -4,11 +4,14 @@ Tidy Data Set CodeBook
 
 CodeBook to support Data Science - Getting and Cleaning Data Project.
 
-The **tidy.data.set** is created as 180 X 88 ( 30 subjects * 6 activities= 180 rows X 86 measurement variables + 2 categorical variables).
+The **tidy.data.set** was created as 180 X 88 ( 30 subjects * 6 activities= 180 rows X 86 measurement variables + 2 categorical variables).
 
 ## Key Data Transformations
 
-The following key transformations were applied to **Column Headings** to make them legal Column Names:
+After ingesting the raw data files the corresponding Subject and Activity Ids were joined to the related Measurement Column Variables for both Train and Test Data Sets using **cbind** function. The Train and Test Data set rows were then joined together using **rbind** function. The Activity Id was replaces with the textual equivalent (e.g. **1** became **WALKING**, **2** became **WALKING_UPSTAIRS**, **3** - **WALKING_DOWNSTAIRS**, **4 SITTING**, **5 STANDING**, **6 LAYING**).
+
+
+The following key transformations were applied to **Column Headings** to make them *legal* Column Names:
 
 1. Removal of round brackets "**()**"
 
@@ -17,7 +20,7 @@ The following key transformations were applied to **Column Headings** to make th
 3. Removal of dashes "**-**"
 
 
-The following key transformations were applied to **Column Headings** to aid readability:
+The following key transformations were applied to **Column Headings** to aid *readability*:
 
 4. Making "**Subject**" and "**Activity**" names clearer.
 
@@ -28,6 +31,12 @@ The following key transformations were applied to **Column Headings** to aid rea
 7. Removing duplicate "**Body**"
 
 
+The following transformations were applied to the *Measurement Variables*:
+
+1. Only selecting those Variable which contained either **mean** or **std** (ignoring case). This reduced the number of column measurement variables from 561 to 86.
+
+2. Grouping variables by both Subject and Activity (reducing no rows from 10299 to 180); each Subject (30 Subjects) having 6 rows (1 for each Activity).
+
 
 ## Data Items
 
@@ -36,7 +45,7 @@ The following are the items within the **tidy.data.set** *dataframe*.
 
 **Subject**   The individual to which the measurements apply to (in range of 1 to 30).
 
-**Activity**  The Activity undertaken (6 different values):
+**Activity**  The Activity undertaken is a factor (6 different values) - was transformed from an ActivityID:
   + LAYING
   + SITTING
   + STANDING
