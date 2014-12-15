@@ -65,7 +65,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ### File Precessing:
 
-1. Load all Data Sources
+1. Load all Data Sources.
 
 ### Transform Data:
 
@@ -75,16 +75,16 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 4.  Merge the test and training data sets to create one data set.
 
-5.  Use descriptive activity names to name the activities (link with Activity Meta Data)
+5.  Use descriptive activity names to name the activities (link with Activity Meta Data); replacing activity ids in the data with descriptive terms which are words (used **match** function).
 
 6.  Appropriately label the data set with descriptive variable names
 
-7.  Identify measurements on the mean and standard deviation and create one data set (using *grep*). 86 variables were identifed with grep searching for **mean* and *std**.
+7.  Identify measurements on the mean and standard deviation and create one data set (using *grep*). 86 variables were identifed with grep searching for **mean** and **std**.
 
-8.  Create a second, independent tidy data set with the average of each variable for each activity and each subject using *aggregate* function. Each Subject is processed individually.
+8.  Create a second, independent tidy data set with the average (using **mean**) of each variable for each activity and each subject using *aggregate* function. Each Subject is processed individually.
 
-9.  Tidy Column Names (remove round brackets & commas and make more meaninful Subject and Activity Names)
+9.  Tidy Column Names (remove round brackets & commas and make more meaninful Subject and Activity Names).
 
 ### Output Processing:
 
-10. Write the tidy data set to a text file
+10. Write the tidy data set to a text file.
