@@ -27,11 +27,11 @@ the average of each variable for each activity and each subject.
 
 ## Files Delivered
 
-+ **run_analysis.R** - R script that deliveres steps 1 to 5 above
++ **run_analysis.R** - R script that delivers steps 1 to 5 above
 
 + **README.md** - this file, explaining how the run_analysis.R works
 
-+ **TidyDataSe.TXT** (in Coursera repository only) - containing Tidy Data Set from step 5 above
++ **TidyDataSet.TXT** (in Coursera repository only) - containing Tidy Data Set from step 5 above
 
 + **CodeBook.md** - a CodeBook that describes the variables, the data, and any transformations.
 
@@ -69,9 +69,9 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ### Transform Data:
 
-2.  Create new test data frame to include Subject, Activity and Varaiables 
+2.  Create new test data frame to include Subject, Activity and Variables 
 
-3.  Create new train data frame to include Subject, Activity and Varaiables 
+3.  Create new train data frame to include Subject, Activity and Variables 
 
 4.  Merge the test and training data sets to create one data set.
 
@@ -79,9 +79,9 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 6.  Appropriately label the data set with descriptive variable names
 
-7.  Identify measurements on the mean and standard deviation and create one data set
+7.  Identify measurements on the mean and standard deviation and create one data set (using *grep*). 86 variables were identifed with grep searching for **mean* and *std**.
 
-8.  Create a second, independent tidy data set with the average of each variable for each activity and each subject using *aggregate* function.
+8.  Create a second, independent tidy data set with the average of each variable for each activity and each subject using *aggregate* function. Each Subject is processed individually.
 
 9.  Tidy Column Names (remove round brackets & commas and make more meaninful Subject and Activity Names)
 
