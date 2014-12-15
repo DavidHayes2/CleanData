@@ -6,11 +6,11 @@ Repo to support Data Science - Getting and Cleaning Data Project.
 
 ## Synopsis
 
-Project processes data from the following data source:
+The **purpose** of this project is to collect, work with, and clean a data set.
+The **goal** is to prepare tidy data that can be used for later analysis.
+Project uses data collected from the accelerometers from the *Samsung Galaxy S* smartphone.
 
-https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-
-And carries out the following processing:
+The following key processing steps are undertaken:
 
 1. Merges the training and the test sets to create one data set.
 
@@ -27,11 +27,64 @@ the average of each variable for each activity and each subject.
 
 ## Files Delivered
 
-+ R script called **run_analysis.R** that deliveres steps 1 to 5 above
++ **run_analysis.R** - R script that deliveres steps 1 to 5 above
 
-+ **README.md* - this file, explaining how the run_analysis.R works
++ **README.md** - this file, explaining how the run_analysis.R works
 
-+ a *tidy data set* (in Coursera repository)
++ **TidyDataSe.TXT** (in Coursera repository only) - containing Tidy Data Set from step 5 above
 
-+ a CodeBook called **CodeBook.md*  that describes the variables, the data, and any transformations.
++ **CodeBook.md** - a CodeBook that describes the variables, the data, and any transformations.
 
+
+## Data Sources
+
+Data extracted from the following data source:
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+### Key Data Files processed
+
++ **activity_labels.txt** - Activity Meta Data (6 rows & 2 columns)
+
++ **features.txt** - Features Meta Data (561 rows & 2 columns)
+
++ **X_test.txt** - Test Data (2947 rows & 561 columns)
+
++ **y_test.txt** - Test Data (2947 rows & 1 column)
+
++ **subject_test.txt** - Test Data (2947 rows & 1 column)
+
++ **X_train.txt** - Train Data (7352 rows & 561 columns)
+
++ **y_train.txt** - Train Data (7352 rows & 1 column)   
+
++ **subject_train.txt** -Train Data (7352 rows & 1 column)
+
+
+## Key Processing Steps
+
+### File Precessing:
+
+1. Load all Data Sources
+
+### Transform Data:
+
+2.  Create new test data frame to include Subject, Activity and Varaiables 
+
+3.  Create new train data frame to include Subject, Activity and Varaiables 
+
+4.  Merge the test and training data sets to create one data set.
+
+5.  Use descriptive activity names to name the activities (link with Activity Meta Data)
+
+6.  Appropriately label the data set with descriptive variable names
+
+7.  Identify measurements on the mean and standard deviation and create one data set
+
+8.  Create a second, independent tidy data set with the average of each variable for each activity and each subject using *aggregate* function.
+
+9.  Tidy Column Names (remove round brackets & commas and make more meaninful Subject and Activity Names)
+
+### Output Processing:
+
+10. Write the tidy data set to a text file
