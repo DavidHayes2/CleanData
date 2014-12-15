@@ -217,8 +217,4 @@ The following are the items within the **tidy.data.set** *dataframe*.
 
 ## Units 
 
-X axis in standard gravity units 'g'
-
-The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
- 
 Features are normalized and bounded within [-1,1].
