@@ -27,7 +27,7 @@ the average of each variable for each activity and each subject.
 
 ## Files Delivered
 
-+ **run_analysis.R** - R script that delivers steps 1 to 5 above
++ **run_analysis.R** - R script (wriiten using **R version 3.1.1** (2014-07-10)) that delivers steps 1 to 5 above
 
 + **README.md** - this file, explaining how the run_analysis.R works
 
@@ -59,6 +59,15 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 + **y_train.txt** - Train Data - Relates to Activity (7352 rows & 1 column)   
 
 + **subject_train.txt** -Train Data - Relates to Individual Subject (7352 rows & 1 column)
+4
+
+### Working Directories
+
+The base Working Direcrory for Data is: **c:/R Programming/CleanData/UCI HAR Dataset**; this is where the files **activity_labels.txt** and **activity_labels.txt** reside.
+
+Within the subdirectory of **test** within **UCI HAR Dataset** the files **X_test.txt** and **y_test.txt** reside.
+
+Within the subdirectory of **train** within **UCI HAR Dataset** the files **X_train.txt** and **y_train.txt** reside.
 
 
 ## Key Processing Steps
@@ -81,9 +90,9 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 7.  Identify measurements on the mean and standard deviation and create one data set (using *grep*). 86 variables were identifed with grep searching for **mean** and **std**.
 
-8.  Create a second, independent tidy data set with the average (using **mean**) of each variable for each activity and each subject using *aggregate* function. Each Subject is processed individually.
+8.  Create a second (**Data.Frame** called **tidy.data.set**), independent tidy data set with the average (using **mean**) of each variable for each activity and each subject using *aggregate* function. Each Subject is processed individually. Note Each variable measured is in one column, with each different observation of that variable in a different row.
 
-9.  Tidy Column Names (remove round brackets & commas and make more meaninful Subject and Activity Names).
+9.  Tidy Column Names (e.g. remove round brackets, dashes & commas and make more meaninful Subject and Activity Names). Specific transformations can be found in the CodeBook
 
 ### Output Processing:
 

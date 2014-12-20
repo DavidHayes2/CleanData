@@ -4,7 +4,7 @@ Tidy Data Set CodeBook
 
 CodeBook to support Data Science - Getting and Cleaning Data Project.
 
-The **tidy.data.set** was created as 180 X 88 ( 30 subjects * 6 activities= 180 rows X 86 measurement variables + 2 categorical variables).
+The **tidy.data.set** *data.frame* was created as 180 *rows* X 88 *columns* ( 30 subjects * 6 activities = 180 rows X 86 measurement variables + 2 categorical variables).
 
 ## Key Data Transformations
 
@@ -40,12 +40,12 @@ The following transformations were applied to the *Measurement Variables*:
 
 ## Data Items
 
-The following are the items within the **tidy.data.set** *dataframe*.
+### The following are the items within the **tidy.data.set** *data.frame*.
 
 
-**Subject**   The individual to which the measurements apply to (in range of 1 to 30).
+**Subject**   The individual subject to which the measurements apply to (in range of 1 to 30); *numeric*
 
-**Activity**  The Activity undertaken is a factor (6 different values) - was transformed from an ActivityID:
+**Activity**  The Activity undertaken is a *factor* (6 different values) - was transformed from an ActivityID:
   + LAYING
   + SITTING
   + STANDING
@@ -53,177 +53,175 @@ The following are the items within the **tidy.data.set** *dataframe*.
   + WALKING_DOWNSTAIRS
   + WALKING_UPSTAIRS
 
-**time.BodyAcc.mean.X**
 
-**time.BodyAcc.mean.Y**  
+The **Measurement Features** below for the **tidy.data.set** data.frame are *numeric*, normalized and bounded within [-1,1]. The Columns names have been kept short with abbreviations (**Gyro** - Gyroscope; **Acc** - Accelerometer). **Jerk** is the rate of change of acceleration:
 
-**time.BodyAcc.mean.Z**    
+**Mean.time.BodyAcc.mean.X**
 
-**time.BodyAcc.std.X**               
+**Mean.time.BodyAcc.mean.Y**  
 
-**time.BodyAcc.std.Y**   
+**Mean.time.BodyAcc.mean.Z**    
 
-**time.BodyAcc.std.Z**      
+**Mean.time.BodyAcc.std.X**               
 
-**time.GravityAcc.mean.X**           
+**Mean.time.BodyAcc.std.Y**   
 
-**time.GravityAcc.mean.Y**  
+**Mean.time.BodyAcc.std.Z**      
 
-**time.GravityAcc.mean.Z**      
+**Mean.time.GravityAcc.mean.X**           
 
-**time.GravityAcc.std.X**            
+**Mean.time.GravityAcc.mean.Y**  
 
-**time.GravityAcc.std.Y**   
+**Mean.time.GravityAcc.mean.Z**      
 
-**time.GravityAcc.std.Z**       
+**Mean.time.GravityAcc.std.X**            
 
-**time.BodyAccJerk.mean.X**          
+**Mean.time.GravityAcc.std.Y**   
 
-**time.BodyAccJerk.mean.Y** 
+**Mean.time.GravityAcc.std.Z**       
 
-**time.BodyAccJerk.mean.Z**       
+**Mean.time.BodyAccJerk.mean.X**          
 
-**time.BodyAccJerk.std.X**           
+**Mean.time.BodyAccJerk.mean.Y** 
 
-**time.BodyAccJerk.std.Y**    
+**Mean.time.BodyAccJerk.mean.Z**       
 
-**time.BodyAccJerk.std.Z**        
+**Mean.time.BodyAccJerk.std.X**           
 
-**time.BodyGyro.mean.X**             
+**Mean.time.BodyAccJerk.std.Y**    
 
-**time.BodyGyro.mean.Y**      
+**Mean.time.BodyAccJerk.std.Z**        
 
-**time.BodyGyro.mean.Z**          
+**Mean.time.BodyGyro.mean.X**             
 
-**time.BodyGyro.std.X**              
+**Mean.time.BodyGyro.mean.Y**      
 
-**time.BodyGyro.std.Y**       
+**Mean.time.BodyGyro.mean.Z**          
 
-**time.BodyGyro.std.Z**             
+**Mean.time.BodyGyro.std.X**              
 
-**time.BodyGyroJerk.mean.X**         
+**Mean.time.BodyGyro.std.Y**       
 
-**time.BodyGyroJerk.mean.Y**   
+**Mean.time.BodyGyro.std.Z**             
 
-**time.BodyGyroJerk.mean.Z**        
+**Mean.time.BodyGyroJerk.mean.X**         
 
-**time.BodyGyroJerk.std.X**          
+**Mean.time.BodyGyroJerk.mean.Y**   
 
-**time.BodyGyroJerk.std.Y**   
+**Mean.time.BodyGyroJerk.mean.Z**        
 
-**time.BodyGyroJerk.std.Z**        
+**Mean.time.BodyGyroJerk.std.X**          
 
-**time.BodyAccMag.mean**             
+**Mean.time.BodyGyroJerk.std.Y**   
 
-**time.BodyAccMag.std**       
+**Mean.time.BodyGyroJerk.std.Z**        
 
-**time.GravityAccMag.mean**        
+**Mean.time.BodyAccMag.mean**             
 
-**time.GravityAccMag.std**           
+**Mean.time.BodyAccMag.std**       
 
-**time.BodyAccJerkMag.mean**   
+**Mean.time.GravityAccMag.mean**        
 
-**time.BodyAccJerkMag.std**         
+**Mean.time.GravityAccMag.std**           
 
-**time.BodyGyroMag.mean**            
+**Mean.time.BodyAccJerkMag.mean**   
 
-**time.BodyGyroMag.std**       
+**Mean.time.BodyAccJerkMag.std**         
 
-**time.BodyGyroJerkMag.mean**      
+**Mean.time.BodyGyroMag.mean**            
 
-**time.BodyGyroJerkMag.std**         
+**Mean.time.BodyGyroMag.std**       
 
-**freq.BodyAcc.mean.X**      
+**Mean.time.BodyGyroJerkMag.mean**      
 
-**freq.BodyAcc.mean.Y**           
+**Mean.time.BodyGyroJerkMag.std**         
 
-**freq.BodyAcc.mean.Z**              
+**Mean.freq.BodyAcc.mean.X**      
 
-**freq.BodyAcc.std.X**       
+**Mean.freq.BodyAcc.mean.Y**           
 
-**freq.BodyAcc.std.Y**            
+**Mean.freq.BodyAcc.mean.Z**              
 
-**freq.BodyAcc.std.Z**               
+**Mean.freq.BodyAcc.std.X**       
 
-**freq.BodyAcc.meanFreq.X**     
+**Mean.freq.BodyAcc.std.Y**            
 
-**freq.BodyAcc.meanFreq.Y**          
+**Mean.freq.BodyAcc.std.Z**               
 
-**freq.BodyAcc.meanFreq.Z**          
+**Mean.freq.BodyAcc.meanFreq.X**     
 
-**freq.BodyAccJerk.mean.X**    
+**Mean.freq.BodyAcc.meanFreq.Y**          
 
-**freq.BodyAccJerk.mean.Y**         
+**Mean.freq.BodyAcc.meanFreq.Z**          
 
-**freq.BodyAccJerk.mean.Z**          
+**Mean.freq.BodyAccJerk.mean.X**    
 
-**freq.BodyAccJerk.std.X**     
+**Mean.freq.BodyAccJerk.mean.Y**         
 
-**freq.BodyAccJerk.std.Y**           
+**Mean.freq.BodyAccJerk.mean.Z**          
 
-**freq.BodyAccJerk.std.Z**           
+**Mean.freq.BodyAccJerk.std.X**     
 
-**freq.BodyAccJerk.meanFreq.X**  
+**Mean.freq.BodyAccJerk.std.Y**           
 
-**freq.BodyAccJerk.meanFreq.Y**     
+**Mean.freq.BodyAccJerk.std.Z**           
 
-**freq.BodyAccJerk.meanFreq.Z**      
+**Mean.freq.BodyAccJerk.meanFreq.X**  
 
-**freq.BodyGyro.mean.X**       
+**Mean.freq.BodyAccJerk.meanFreq.Y**     
 
-**freq.BodyGyro.mean.Y**            
+**Mean.freq.BodyAccJerk.meanFreq.Z**      
 
-**freq.BodyGyro.mean.Z**             
+**Mean.freq.BodyGyro.mean.X**       
 
-**freq.BodyGyro.std.X**        
+**Mean.freq.BodyGyro.mean.Y**            
 
-**freq.BodyGyro.std.Y**            
+**Mean.freq.BodyGyro.mean.Z**             
 
-**freq.BodyGyro.std.Z**              
+**Mean.freq.BodyGyro.std.X**        
 
-**freq.BodyGyro.meanFreq.X**  
+**Mean.freq.BodyGyro.std.Y**            
 
-**freq.BodyGyro.meanFreq.Y**       
+**Mean.freq.BodyGyro.std.Z**              
 
-**freq.BodyGyro.meanFreq.Z**         
+**Mean.freq.BodyGyro.meanFreq.X**  
 
-**freq.BodyAccMag.mean**      
+**Mean.freq.BodyGyro.meanFreq.Y**       
 
-**freq.BodyAccMag.std**            
+**Mean.freq.BodyGyro.meanFreq.Z**         
 
-**freq.BodyAccMag.meanFreq**         
+**Mean.freq.BodyAccMag.mean**      
 
-**freq.BodyAccJerkMag.mean**   
+**Mean.freq.BodyAccMag.std**            
 
-**freq.BodyAccJerkMag.std**        
+**Mean.freq.BodyAccMag.meanFreq**         
 
-**freq.BodyAccJerkMag.meanFreq**     
+**Mean.freq.BodyAccJerkMag.mean**   
 
-**freq.BodyGyroMag.mean**      
+**Mean.freq.BodyAccJerkMag.std**        
 
-**freq.BodyGyroMag.std**            
+**Mean.freq.BodyAccJerkMag.meanFreq**     
 
-**freq.BodyGyroMag.meanFreq**        
+**Mean.freq.BodyGyroMag.mean**      
 
-**freq.BodyGyroJerkMag.mean**  
+**Mean.freq.BodyGyroMag.std**            
 
-**freq.BodyGyroJerkMag.std**        
+**Mean.freq.BodyGyroMag.meanFreq**        
 
-**freq.BodyGyroJerkMag.meanFreq**    
+**Mean.freq.BodyGyroJerkMag.mean**  
 
-**angletBodyAccMeangravity**  
+**Mean.freq.BodyGyroJerkMag.std**        
 
-**angletBodyAccJerkMeangravityMean**
+**Mean.freq.BodyGyroJerkMag.meanFreq**    
 
-**angletBodyGyroMeangravityMean**   
+**Mean.angletBodyAccMeangravity**  
 
-**angletBodyGyroJerkMeangravityMean** 
+**Mean.angletBodyAccJerkMeangravityMean**
 
-**angleXgravityMean**          
+**Mean.angletBodyGyroMeangravityMean**   
 
-**angleYgravityMean**
+**Mean.angletBodyGyroJerkMeangravityMean** 
 
+**Mean.angleXgravityMean**          
 
-## Units 
-
-Features are normalized and bounded within [-1,1].
+**Mean.angleYgravityMean**
