@@ -104,5 +104,7 @@ Within the subdirectory of **train** within **UCI HAR Dataset** the files **X_tr
 The code to read back **tidy.data.set** *data.frame* from Coursera site:
 
 tidy.codebook.url <- "https://s3.amazonaws.com/coursera-uploads/user-538e80937e83af384bec689d/973758/asst-3/6d8f6e50885d11e4805a7fa4508748cc.txt"
+
 download.file(tidy.codebook.url, destfile="tidy.dat")
+
 tidy.data.set <- read.table("tidy.dat", header=TRUE)
